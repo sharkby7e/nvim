@@ -3,6 +3,7 @@ local options = {
 ai   = true, 
 ch   = 1, 
 ea   = true,
+et   = true,
 hls  = true,
 ic   = true,
 is   = true,
