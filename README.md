@@ -16,12 +16,13 @@ I take ispiration from the following neovim distributions:
 ### Functional
  - [x] base options
  - [x] my keymaps
- - [ ] package manager (probably [lazy.nvim](https://github.com/folke/lazy.nvim))
+ - [x] package manager (probably [lazy.nvim](https://github.com/folke/lazy.nvim))
  - [ ] file explorer
  - [ ] lsp
  - [ ] bufferline
 
 ###  Aesthetic
+ - [x] colorshcheme 
  - [ ] syntax highlighting
  - [ ] status line
 
