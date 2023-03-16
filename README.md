@@ -18,6 +18,9 @@ I take ispiration from the following neovim distributions:
  - [ ] file explorer
  - [ ] lsp
  - [ ] bufferline
+ - Packages
+   - [ ] bufferline
+   - [ ] nvim test
 
 ###  Aesthetic
  - [x] colorshcheme 

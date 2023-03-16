@@ -20,6 +20,9 @@ map("n", "l", "h", opts)
 
 map("", "<leader>h", ":noh<CR>", opts)
 map("", "<leader>=", "gg=G", opts)
+map("", "<leader>w", ":w<CR>", opts)
+map("", "<leader>q", ":q<CR>", opts)
+
 
 --lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 --lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
