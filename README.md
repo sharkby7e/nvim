@@ -1,7 +1,5 @@
 # sharkby7e's neovim config from scratch 
-I am embarking on the tumultuous journey of setting up neovim from scratch without using a distribution. 
-This is for fun and learning!
-
+I am embarking on the tumultuous journey of setting up neovim from scratch without using a distribution. This is for fun and learning!
 
 I take ispiration from the following neovim distributions:
  - [AstroNvim](https://astronvim.com/)
@@ -26,3 +24,7 @@ I take ispiration from the following neovim distributions:
  - [ ] syntax highlighting
  - [ ] status line
 
+Some creators/videos I'm using along the way!
+ - [TJ DeVries](https://www.youtube.com/watch?v=stqUbv-5u2s&t=650s)
+ - [devaslife](https://www.youtube.com/watch?v=ajmK0ZNcM4Q&t=715s)
+ - [typecraft](https://www.youtube.com/watch?v=J9yqSdvAKXY&t=110s)
