@@ -15,17 +15,21 @@ I take ispiration from the following neovim distributions:
  - [x] base options
  - [x] my keymaps
  - [x] package manager (probably [lazy.nvim](https://github.com/folke/lazy.nvim))
- - [ ] file explorer
+ - [x] file explorer
+ - [ ] commenting
  - [ ] lsp
  - [ ] bufferline
+ - [ ] completion
+ - [ ] which-key
  - Packages
    - [ ] bufferline
    - [ ] nvim test
+   - [ ] telescope
 
 ###  Aesthetic
  - [x] colorshcheme 
- - [ ] syntax highlighting
- - [ ] status line
+ - [ ] syntax highlighting (tree-sitter)
+ - [x] status line
 
 Some creators/videos I'm using along the way!
  - [TJ DeVries](https://www.youtube.com/watch?v=stqUbv-5u2s&t=650s)
