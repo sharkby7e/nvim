@@ -7,15 +7,15 @@ et   = true,
 hls  = true,
 ic   = true,
 is   = true,
-nuw  = 4,
 nu   = true, 
+nuw  = 4,
 rnu  = true,
-sw   = 2,
+smd  = false,
 sta  = true,
+sw   = 2,
 ts   = 2,
 vb   = true,
 wrap = true,
-background = dark
 }
 
 for k, v in pairs(options) do

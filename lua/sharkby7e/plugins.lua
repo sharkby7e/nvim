@@ -13,20 +13,24 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   {
-    "EdenEast/nightfox.nvim",
-    lazy = false
-  },
-  {
-    'goolord/alpha-nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-  },
-  "kylechui/nvim-surround",
-  "windwp/nvim-autopairs", 
-  "nvim-tree/nvim-tree.lua",
-  "nvim-tree/nvim-web-devicons",
-  "nvim-lualine/lualine.nvim",
-  "folke/neodev.nvim",
-  "folke/which-key.nvim",
+    {
+      "EdenEast/nightfox.nvim",
+      lazy = false
+    },
+    {
+      'goolord/alpha-nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' },
+    },
+    'lewis6991/gitsigns.nvim',
+    "RRethy/nvim-base16",
+    "kylechui/nvim-surround",
+    "windwp/nvim-autopairs", 
+    "nvim-tree/nvim-tree.lua",
+    "nvim-tree/nvim-web-devicons",
+    "nvim-lualine/lualine.nvim",
+    "folke/neodev.nvim",
+    "folke/which-key.nvim",
+  }
 }
 
 require("lazy").setup(plugins, {})
