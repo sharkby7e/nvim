@@ -18,6 +18,8 @@ map("n", "k", "j", opts)
 map("n", "h", "l", opts)
 map("n", "l", "h", opts)
 
+map("", "<leader>h", ":noh<CR>", opts)
+map("", "<leader>=", "gg=G", opts)
 
 --lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 --lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
@@ -25,19 +27,17 @@ map("n", "l", "h", opts)
 --lvim.keys.normal_mode["<leader>r"] = ":TestNearest<CR>"
 --lvim.keys.normal_mode["<C-r>"] = ":TestLast<CR>"
 
---lvim.keys.normal_mode["<leader>o"] = ":NvimTreeFocus<CR>"
-
 --lvim.builtin.terminal.open_mapping = "<c-'>"
 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
