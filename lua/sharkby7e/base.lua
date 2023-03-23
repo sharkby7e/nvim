@@ -15,7 +15,8 @@ sta  = true,
 sw   = 2,
 ts   = 2,
 vb   = true,
-wrap = true,
+udf  = true, 
+wrap = false,
 }
 
 for k, v in pairs(options) do
