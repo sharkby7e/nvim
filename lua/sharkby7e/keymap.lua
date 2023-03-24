@@ -17,6 +17,8 @@ map("n", "j", "k", opts)
 map("n", "k", "j", opts)
 map("n", "h", "l", opts)
 map("n", "l", "h", opts)
+map("n", "^", "$", opts)
+map("n", "$", "^", opts)
 
 map("", "<leader>h", ":noh<CR>", opts)
 map("", "<leader>=", "gg=G", opts)
