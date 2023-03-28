@@ -21,6 +21,7 @@ I take ispiration from the following neovim distributions:
  - [ ] bufferline
  - [ ] completion
  - [ ] which-key
+ - [x] toggle-term
  - Packages
    - [ ] bufferline
    - [ ] nvim test
@@ -28,7 +29,7 @@ I take ispiration from the following neovim distributions:
 
 ###  Aesthetic
  - [x] colorshcheme 
- - [ ] syntax highlighting (tree-sitter)
+ - [x] syntax highlighting (tree-sitter)
  - [x] status line
 
 Some creators/videos I'm using along the way!
