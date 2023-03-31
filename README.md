@@ -24,7 +24,8 @@ I take ispiration from the following neovim distributions:
  - [x] toggle-term
  - Packages
    - [ ] bufferline
-   - [ ] nvim test
+   - [ ] ~~nvim test~~
+   - [ ] neotest
    - [ ] telescope
 
 ###  Aesthetic
