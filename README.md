@@ -16,7 +16,7 @@ I take ispiration from the following neovim distributions:
  - [x] my keymaps
  - [x] package manager (probably [lazy.nvim](https://github.com/folke/lazy.nvim))
  - [x] file explorer
- - [ ] commenting
+ - [x] commenting
  - [ ] lsp
  - [ ] bufferline
  - [ ] completion
