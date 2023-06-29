@@ -8,7 +8,7 @@ return {
         offsets = {
           {
             filetype = "neo-tree",
-            text = "N30-7Ree",
+            text = "neo-tree",
             text_align = "center",
             separator = true
           }
