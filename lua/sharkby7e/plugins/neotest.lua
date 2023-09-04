@@ -3,7 +3,8 @@ return {
   dependencies = {
     "olimorris/neotest-rspec",
     "nvim-treesitter/nvim-treesitter",
-    "antoinemadec/FixCursorHold.nvim"
+    "antoinemadec/FixCursorHold.nvim",
+    "jfpedroza/neotest-elixir"
   },
   config = function()
     require("neotest").setup({
@@ -16,7 +17,8 @@ return {
               "rspec",
             })
           end
-        })
+        }),
+        require("neotest-elixir"),
       },
     })
   end
