@@ -5,11 +5,14 @@ return {
   build = ":TSUpdate",
   cmd = { "TSUpdateSync" },
   config = function()
-    require'nvim-treesitter.configs'.setup {
-      ensure_installed = {"elixir", "heex", "eex", "ruby"},
+    require 'nvim-treesitter.configs'.setup {
+      endwise = {
+        enable = true,
+      },
+      ensure_installed = { "elixir", "heex", "eex", "ruby" },
       highlight = {
         enable = true,
-      }
+      },
     }
   end
 }
