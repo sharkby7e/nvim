@@ -1,9 +1,9 @@
 return {
   "nvim-neotest/neotest",
   dependencies = {
-    "olimorris/neotest-rspec",
     "nvim-treesitter/nvim-treesitter",
     "antoinemadec/FixCursorHold.nvim",
+    "olimorris/neotest-rspec",
     "jfpedroza/neotest-elixir"
   },
   config = function()
