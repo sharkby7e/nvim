@@ -7,11 +7,11 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  config = function ()
+  config = function()
     require("neo-tree").setup({
       close_if_last_window = true,
       window = {
-        position = "left", 
+        position = "left",
         width = 25
       }
     })
@@ -19,4 +19,3 @@ return {
   vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree toggle reveal<CR>', {}),
   vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Neotree focus<CR>', {}),
 }
-
