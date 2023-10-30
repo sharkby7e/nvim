@@ -5,7 +5,7 @@ return {
   build = ":TSUpdate",
   cmd = { "TSUpdateSync" },
   config = function()
-    require 'nvim-treesitter'.setup {
+    require 'nvim-treesitter.configs'.setup {
       endwise = {
         enable = true,
       },
