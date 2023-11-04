@@ -8,6 +8,9 @@ return {
   },
   config = function()
     require("neotest").setup({
+      summary = {
+        open = "botright split | resize 15"
+      },
       adapters = {
         require("neotest-rspec")({
           rspec_cmd = function()
