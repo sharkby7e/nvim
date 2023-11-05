@@ -13,6 +13,7 @@ local options = {
   rnu  = true,          -- relative numbers
   smd  = false,         -- show mode
   sta  = true,          -- use shiftwidth when inserting tab
+  scl  = "yes",         -- sign column always 2 wide (git/errors)
   sw   = 2,             -- shift width
   ts   = 2,             -- tab spaces
   vb   = true,          -- visual bell

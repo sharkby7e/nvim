@@ -18,4 +18,15 @@ require("lazy").setup('sharkby7e.plugins')
 ------ lsp config
 require('sharkby7e.lsp')
 
+
+-- lazygit toggle-term
+local Terminal = require('toggleterm.terminal').Terminal
+local lazygit  = Terminal:new({ cmd = "lazygit", hidden = true })
+
+function lazygit_toggle()
+  lazygit:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua lazygit_toggle()<CR>", { noremap = true, silent = true })
+
 print('ur doing great')
