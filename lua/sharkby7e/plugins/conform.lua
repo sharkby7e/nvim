@@ -16,7 +16,7 @@ return {
   opts = {
     -- Define your formatters
     formatters_by_ft = {
-      lua = { "stylua" },
+      lua = { "lua_ls" },
       eruby = { "erb_format" },
     },
     -- Set up format-on-save
