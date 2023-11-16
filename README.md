@@ -14,7 +14,7 @@ I took ispiration from the following neovim distributions:
 
 ## In order to set goals, and keep track of my progress I will use this checklist.
 ### Functional
- - [ ] lsp
+ - [x] lsp
  - [ ] completion
  - [ ] which-key?(not sure if i actually need this)
  - [x] base options
