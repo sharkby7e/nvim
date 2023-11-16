@@ -4,12 +4,17 @@ return {
   priority = 999,
   build = ":TSUpdate",
   cmd = { "TSUpdateSync" },
+  dependencies = {
+    "windwp/nvim-ts-autotag",
+    "tpope/vim-endwise",
+    "hiphish/rainbow-delimiters.nvim",
+  },
   config = function()
     require 'nvim-treesitter.configs'.setup {
       ensure_installed = { "elixir", "heex", "eex", "ruby" },
       autotag = {
         enable = true,
-        filetypes = { "html", "xml", "eruby", "embedded_template" },
+        filetypes = { "html", "xml", "eruby", "heex", "elixir", "embedded_template" },
       },
       endwise = {
         enable = true,
@@ -19,7 +24,7 @@ return {
       },
       rainbow = {
         enable = true,
-      }
+      },
     }
   end
 }
