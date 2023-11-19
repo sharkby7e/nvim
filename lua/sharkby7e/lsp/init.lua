@@ -4,9 +4,6 @@ require("mason-lspconfig").setup({
   ensure_installed = { "lua_ls", "tsserver" }
 })
 
--- servers
-require("lspconfig").tsserver.setup {}
-
 vim.diagnostic.config {
   virtual_text = false,
   signs = true,

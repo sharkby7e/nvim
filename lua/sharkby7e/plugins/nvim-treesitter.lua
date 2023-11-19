@@ -14,7 +14,8 @@ return {
       ensure_installed = { "elixir", "heex", "eex", "ruby" },
       autotag = {
         enable = true,
-        filetypes = { "html", "xml", "eruby", "heex", "elixir", "embedded_template" },
+        filetypes = { "html", "xml", "typescriptreact",
+          "eruby", "heex", "elixir", "embedded_template" },
       },
       endwise = {
         enable = true,
