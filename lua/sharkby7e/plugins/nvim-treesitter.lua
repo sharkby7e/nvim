@@ -17,13 +17,7 @@ return {
         filetypes = { "html", "xml", "typescriptreact",
           "eruby", "heex", "elixir", "embedded_template" },
       },
-      endwise = {
-        enable = true,
-      },
       highlight = {
-        enable = true,
-      },
-      rainbow = {
         enable = true,
       },
     }
