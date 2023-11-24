@@ -8,12 +8,12 @@ return {
 
     elixir.setup {
       nextls = { enable = false },
-      credo = { enable = true },
+      credo = { enable = false },
       elixirls = {
         enable = true,
         settings = elixirls.settings {
           dialyzerEnabled = false,
-          enableTestLenses = true,
+          enableTestLenses = false,
         },
         on_attach = function(client, bufnr)
           vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>", { buffer = true, noremap = true })
