@@ -18,6 +18,8 @@ return {
     formatters_by_ft = {
       lua = { "lua_ls" },
       eruby = { "erb_format" },
+      javascript = { "prettierd" },
+      typescriptreact = { "prettierd" }
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },

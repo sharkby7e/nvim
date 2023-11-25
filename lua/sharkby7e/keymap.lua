@@ -16,7 +16,7 @@ map("n", "n", "nzzzv", opts)
 
 map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
-map("n", "<leader>c", ":BufferLinePickClose<CR>", opts)
+map("n", "<leader>bb", ":bd<CR>", opts)
 map("n", "<leader>x", ":BufferLinePick<CR>", opts)
 
 map("n", "<leader>r", "<CMD>lua require('neotest').run.run()<CR>", opts)
