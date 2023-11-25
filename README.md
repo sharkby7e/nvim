@@ -12,11 +12,13 @@ I took ispiration from the following neovim distributions:
 
  Looks like I'm actually getting close, now just have to get lsp and completion set up, and then I'm like...good to go on a lot of things!
 
+ Update 11/25/23 I have been cracking at this for a while now, and it's actually getting to a pretty good place.
+
 ## In order to set goals, and keep track of my progress I will use this checklist.
 ### Functional
- - [x] lsp
- - [ ] completion
  - [ ] which-key?(not sure if i actually need this)
+ - [x] lsp
+ - [x] completion
  - [x] base options
  - [x] my keymaps
  - [x] package manager (probably [lazy.nvim](https://github.com/folke/lazy.nvim))
