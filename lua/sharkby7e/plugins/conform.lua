@@ -19,7 +19,8 @@ return {
       lua = { "lua_ls" },
       eruby = { "erb_format" },
       javascript = { "prettierd" },
-      typescriptreact = { "prettierd" }
+      typescriptreact = { "prettierd" },
+      typescript = { "prettierd" }
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
