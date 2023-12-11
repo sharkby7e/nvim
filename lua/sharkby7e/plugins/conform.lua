@@ -16,11 +16,12 @@ return {
   opts = {
     -- Define your formatters
     formatters_by_ft = {
-      lua = { "lua_ls" },
       eruby = { "erb_format" },
       javascript = { "prettierd" },
+      lua = { "lua_ls" },
+      ruby = { "rubyfmt" },
+      typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
-      typescript = { "prettierd" }
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
