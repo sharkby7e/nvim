@@ -6,7 +6,6 @@ map("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 map("n", "<S-e>", ":m-2<CR>==", opts)
 map("n", "<S-n>", ":m+1<CR>==", opts)
 map("n", "<CR>", "o<ESC>", opts)
@@ -21,6 +20,9 @@ map("n", "m", "h", opts)
 map("n", "n", "j", opts)
 map("n", "e", "k", opts)
 map("n", "i", "l", opts)
+
+map("i", "<c-<>", "<%= %><ESC>T=a", opts)
+map("i", "<c->>", "<% %><ESC>bi", opts)
 
 map("n", "<S-h>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-l>", ":BufferLineCyclePrev<CR>", opts)
