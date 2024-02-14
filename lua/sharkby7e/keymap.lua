@@ -16,9 +16,7 @@ map("n", "h", "i", opts)
 map("n", "k", "nzzzv", opts)
 map("n", "j", "Nzzzv", opts)
 
-map("n", "m", "h", opts)
 map("n", "n", "j", opts)
-map("n", "e", "k", opts)
 map("n", "i", "l", opts)
 
 map("i", "<c-<>", "<%= %><ESC>T=a", opts)
