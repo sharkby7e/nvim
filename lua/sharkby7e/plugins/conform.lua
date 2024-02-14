@@ -19,7 +19,7 @@ return {
       eruby = { "erb_format" },
       javascript = { "prettierd" },
       lua = { "lua_ls" },
-      ruby = { "rubyfmt" },
+      -- ruby = { "rubyfmt" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
     },
