@@ -13,14 +13,8 @@ map("n", "<S-u>", "<C-r>", opts)
 
 map("n", "h", "i", opts)
 
-map("n", "k", "nzzzv", opts)
-map("n", "j", "Nzzzv", opts)
-
-map("n", "n", "j", opts)
-map("n", "i", "l", opts)
-
-map("i", "<c-<>", "<%= %><ESC>T=a", opts)
-map("i", "<c->>", "<% %><ESC>bi", opts)
+map("n", "n", "nzzzv", opts)
+map("n", "m", "Nzzzv", opts)
 
 map("n", "<S-h>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-l>", ":BufferLineCyclePrev<CR>", opts)
