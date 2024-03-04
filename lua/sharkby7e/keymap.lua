@@ -11,8 +11,6 @@ map("n", "<S-n>", ":m+1<CR>==", opts)
 map("n", "<CR>", "o<ESC>", opts)
 map("n", "<S-u>", "<C-r>", opts)
 
-map("n", "h", "i", opts)
-
 map("n", "n", "nzzzv", opts)
 map("n", "m", "Nzzzv", opts)
 
