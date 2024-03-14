@@ -11,6 +11,13 @@ map("n", "<S-n>", ":m+1<CR>==", opts)
 map("n", "<CR>", "o<ESC>", opts)
 map("n", "<S-u>", "<C-r>", opts)
 
+map("n", "<leader>v", "<CMD>vsplit<CR>", opts)
+map("n", "<leader>s", "<CMD>split<CR>", opts)
+map("n", "<C-up>", "<c-w><up>", opts)
+map("n", "<C-down>", "<c-w><down>", opts)
+map("n", "<C-left>", "<c-w><left>", opts)
+map("n", "<C-right>", "<c-w><right>", opts)
+
 map("n", "n", "nzzzv", opts)
 map("n", "m", "Nzzzv", opts)
 
