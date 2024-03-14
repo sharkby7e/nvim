@@ -11,7 +11,7 @@ return {
   },
   config = function()
     require 'nvim-treesitter.configs'.setup {
-      ensure_installed = { "elixir", "heex", "eex", "ruby" },
+      ensure_installed = { "lua", "elixir", "heex", "eex", "ruby" },
       autotag = {
         enable = true,
         filetypes = { "html", "xml", "typescriptreact",
