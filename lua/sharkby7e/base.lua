@@ -1,6 +1,6 @@
 -- :help option-list
 local options = {
-  si   = true,          -- autoindent
+  ai   = true,          -- autoindent
   cb   = "unnamedplus", -- clipboard
   ch   = 1,             -- cmdheight
   ea   = true,          -- windows always equal
