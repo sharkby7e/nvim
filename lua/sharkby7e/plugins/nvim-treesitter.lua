@@ -1,7 +1,5 @@
 return {
   'nvim-treesitter/nvim-treesitter',
-  lazy = false,
-  priority = 999,
   build = ":TSUpdate",
   cmd = { "TSUpdateSync" },
   dependencies = {
@@ -9,6 +7,7 @@ return {
     "tpope/vim-endwise",
     "hiphish/rainbow-delimiters.nvim",
   },
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
     require 'nvim-treesitter.configs'.setup {
       ensure_installed = { "vim", "vimdoc", "lua", "elixir", "heex", "eex", "ruby" },
@@ -23,10 +22,10 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = '<leader>is',
-          scope_incremental = '<leader>n',
-          node_incremental = '<leader>n',
-          node_decremental = '<leader>m',
+          init_selection = '<C-space>',
+          scope_incremental = '<C-n>',
+          node_incremental = '<C-space>',
+          node_decremental = '<bs>',
         }
       },
       indent = {
