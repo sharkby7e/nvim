@@ -32,4 +32,5 @@ require('ts_context_commentstring').setup {
 
 vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua lazygit_toggle()<CR>", { noremap = true, silent = true })
 
+vim.cmd('autocmd FileType ruby setlocal indentkeys-=.')
 print('ur doing great')
