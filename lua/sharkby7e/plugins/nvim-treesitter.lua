@@ -13,7 +13,7 @@ return {
       ensure_installed = { "vim", "vimdoc", "lua", "elixir", "heex", "eex", "ruby" },
       autotag = {
         enable = true,
-        filetypes = { "html", "xml", "typescriptreact", "eruby", "heex", "elixir", "embedded_template" },
+        filetypes = {"astro", "html", "xml", "typescriptreact", "eruby", "heex", "elixir", "embedded_template" },
       },
       highlight = {
         enable = true,

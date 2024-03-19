@@ -16,7 +16,7 @@ return {
   opts = {
     -- Define your formatters
     formatters_by_ft = {
-      astro = { "prettierd" },
+      astro = { "prettier" },
       eruby = { "erb_format" },
       javascript = { "prettierd" },
       lua = { "lua_ls" },
