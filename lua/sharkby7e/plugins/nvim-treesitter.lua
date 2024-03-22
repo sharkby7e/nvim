@@ -6,6 +6,7 @@ return {
     "windwp/nvim-ts-autotag",
     "tpope/vim-endwise",
     "hiphish/rainbow-delimiters.nvim",
+    "nvim-treesitter/nvim-treesitter-context"
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function()
