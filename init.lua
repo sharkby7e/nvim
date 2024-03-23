@@ -30,7 +30,15 @@ require('ts_context_commentstring').setup {
   enable_autocmd = false,
 }
 
+-- lazygit 
 vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua lazygit_toggle()<CR>", { noremap = true, silent = true })
 
+-- weird formatting bug cuz ruby interpreter doesn't care about space
 vim.cmd('autocmd FileType ruby setlocal indentkeys-=.')
+
+-- colorschemes
+-- vim.cmd([[colorscheme nordfox]])
+-- vim.cmd [[colorscheme onenord]]
+vim.cmd [[colorscheme kanagawa-wave]]
+
 print('ur doing great')
