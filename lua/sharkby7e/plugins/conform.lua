@@ -21,7 +21,7 @@ return {
       javascript = { "prettierd" },
       lua = { "lua_ls" },
       ruby = { "rubyfmt" },
-      rust = { "rustfmt"},
+      rust = { "rustfmt" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
     },
@@ -32,6 +32,11 @@ return {
       shfmt = {
         prepend_args = { "-i", "2" },
       },
+      erb_format = {
+        prepend_args = {
+          "--print-width 10"
+        }
+      }
     },
   },
   init = function()
