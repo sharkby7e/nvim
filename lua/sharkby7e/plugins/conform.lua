@@ -26,16 +26,14 @@ return {
       typescriptreact = { "prettierd" },
     },
     -- Set up format-on-save
-    -- format_on_save = { timeout_ms = 500, lsp_fallback = true },
+    format_on_save = { timeout_ms = 500, lsp_fallback = true },
     -- Customize formatters
     formatters = {
       shfmt = {
         prepend_args = { "-i", "2" },
       },
       erb_format = {
-        prepend_args = {
-          "--print-width 10"
-        }
+        args = { "--stdin", "--print-width", "150" }
       }
     },
   },
