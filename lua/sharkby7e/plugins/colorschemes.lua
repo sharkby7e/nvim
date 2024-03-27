@@ -28,5 +28,6 @@ return {
     config = function()
       require("onenord").setup()
     end
-  }
+  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
 }
