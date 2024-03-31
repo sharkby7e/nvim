@@ -36,12 +36,21 @@ require 'mason-lspconfig'.setup_handlers {
   end
 }
 
-require("lspconfig").lua_ls.setup {
+local lspconfig = require("lspconfig")
+
+lspconfig.lua_ls.setup {
   settings = {
     Lua = {
       diagnostics = {
         globals = { 'vim' }
       }
     }
+  }
+}
+
+lspconfig.solargraph.setup {
+  on_attach = on_attach,
+  init_options = {
+    formatting = false,
   }
 }
