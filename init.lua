@@ -21,7 +21,7 @@ require('sharkby7e.lsp')
 -- lazygit toggle-term
 local Terminal = require('toggleterm.terminal').Terminal
 local lazygit  = Terminal:new({ cmd = "lazygit", hidden = true })
-function lazygit_toggle()
+function Lazygit_toggle()
   lazygit:toggle()
 end
 
@@ -31,7 +31,7 @@ require('ts_context_commentstring').setup {
 }
 
 -- lazygit
-vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua lazygit_toggle()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua Lazygit_toggle()<CR>", { noremap = true, silent = true })
 
 -- weird formatting bug cuz ruby interpreter doesn't care about space
 vim.cmd('autocmd FileType ruby setlocal indentkeys-=.')
