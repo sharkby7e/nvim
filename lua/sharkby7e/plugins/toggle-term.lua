@@ -4,7 +4,7 @@ return {
     require("toggleterm").setup({
       autochdir = true,
       direction = "float",
-      open_mapping = [[<c-/>]]
+      open_mapping = [[;]]
     })
   end
 }
