@@ -39,7 +39,7 @@ vim.cmd('autocmd FileType ruby setlocal indentkeys-=.')
 -- colorschemes
 -- vim.cmd([[colorscheme nordfox]])
 -- vim.cmd [[colorscheme onenord]]
-vim.cmd [[colorscheme kanagawa-wave]]
--- vim.cmd [[colorscheme catppuccin-macchiato]]
+-- vim.cmd [[colorscheme kanagawa-wave]]
+vim.cmd [[colorscheme catppuccin-macchiato]]
 
 print('ur doing great')
