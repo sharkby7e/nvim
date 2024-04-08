@@ -52,6 +52,6 @@ lspconfig.lua_ls.setup {
 lspconfig.solargraph.setup {
   on_attach = on_attach,
   init_options = {
-    formatting = false,
+    formatting = true,
   }
 }
