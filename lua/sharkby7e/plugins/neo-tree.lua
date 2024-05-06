@@ -9,7 +9,7 @@ return {
   },
   config = function()
     require("neo-tree").setup({
-      close_if_last_window = true,
+      close_if_last_window = false,
       window = {
         position = "left",
         width = 25

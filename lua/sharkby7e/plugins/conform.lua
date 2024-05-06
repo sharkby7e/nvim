@@ -33,7 +33,7 @@ return {
         prepend_args = { "-i", "2" },
       },
       erb_format = {
-        args = { "--stdin", "--print-width", "150" }
+        args = { "--stdin", "--print-width", "200" }
       }
     },
   },
