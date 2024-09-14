@@ -12,10 +12,6 @@ return {
   config = function()
     require 'nvim-treesitter.configs'.setup {
       ensure_installed = { "vim", "vimdoc", "lua", "elixir", "heex", "eex", "ruby" },
-      autotag = {
-        enable = true,
-        filetypes = { "astro", "html", "xml", "javascript", "typescriptreact", "eruby", "heex", "elixir", "embedded_template" },
-      },
       highlight = {
         enable = true,
       },
