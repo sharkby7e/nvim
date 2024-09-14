@@ -22,8 +22,8 @@ map("n", "===", "gg=G", opts)
 map("n", "n", "nzzzv", opts)
 map("n", "m", "Nzzzv", opts)
 
-map("i", "<c-<>", "<% %><ESC>bbei", opts)
-map("i", "<c->>", "<%= %><ESC>T=a", opts)
+map("n", "<leader>rs", "o<% %><ESC>bbea ", opts)
+map("n", "<leader>rt", "o<%= %><ESC>T=i ", opts)
 
 map("n", "<S-h>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-l>", ":BufferLineCyclePrev<CR>", opts)
