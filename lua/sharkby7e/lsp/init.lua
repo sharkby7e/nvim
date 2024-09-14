@@ -1,7 +1,7 @@
 -- mason and mason lsp-config
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "tsserver" }
+  ensure_installed = { "lua_ls" }
 })
 
 vim.diagnostic.config {
