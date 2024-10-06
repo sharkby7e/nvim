@@ -17,6 +17,9 @@ map("n", "<C-down>", "<c-w><down>", opts)
 map("n", "<C-left>", "<c-w><left>", opts)
 map("n", "<C-right>", "<c-w><right>", opts)
 
+map("n", "h", "j", opts)
+map("n", "j", "h", opts)
+
 map("n", "===", "gg=G", opts)
 
 map("n", "n", "nzzzv", opts)
