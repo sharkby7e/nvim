@@ -4,9 +4,9 @@ return {
   cmd = { "TSUpdateSync" },
   dependencies = {
     "windwp/nvim-ts-autotag",
-    "tpope/vim-endwise",
     "hiphish/rainbow-delimiters.nvim",
-    "nvim-treesitter/nvim-treesitter-context"
+    "nvim-treesitter/nvim-treesitter-context",
+    "RRethy/nvim-treesitter-endwise"
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function()
@@ -14,6 +14,9 @@ return {
       ensure_installed = { "vim", "vimdoc", "lua", "elixir", "heex", "eex", "ruby" },
       highlight = {
         enable = true,
+      },
+      endwise = {
+        enable = true
       },
       incremental_selection = {
         enable = true,
