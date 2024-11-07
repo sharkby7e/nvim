@@ -17,7 +17,8 @@ return {
     -- Define your formatters
     formatters_by_ft = {
       astro = { "prettier" },
-      eruby = { "erb_format" },
+      eruby = { "htmlbeautifier" },
+      html = { "htmlbeautifier" },
       javascript = { "prettierd" },
       lua = { "lua_ls" },
       -- ruby = { "rubyfmt" },
