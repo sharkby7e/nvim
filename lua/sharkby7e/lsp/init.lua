@@ -1,7 +1,7 @@
 -- mason and mason lsp-config
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls" }
+  ensure_installed = { "lua_ls", "solargraph", "rubocop" }
 })
 
 vim.diagnostic.config {
