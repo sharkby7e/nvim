@@ -12,10 +12,11 @@ map("n", "<S-u>", "<C-r>", opts)
 
 map("n", "<leader>v", "<CMD>vsplit<CR>", opts)
 map("n", "<leader>s", "<CMD>split<CR>", opts)
-map("n", "<C-up>", "<c-w><up>", opts)
-map("n", "<C-down>", "<c-w><down>", opts)
-map("n", "<C-left>", "<c-w><left>", opts)
-map("n", "<C-right>", "<c-w><right>", opts)
+
+map("n", "<C-k>", ":<C-U>TmuxNavigateLeft<cr>", opts)
+map("n", "<C-n>", ":<C-U>TmuxNavigateDown<cr>", opts)
+map("n", "<C-e>", ":<C-U>TmuxNavigateUp<cr>", opts)
+map("n", "<C-h>", ":<C-U>TmuxNavigateRight<cr>", opts)
 
 map("n", "h", "j", opts)
 map("n", "j", "h", opts)

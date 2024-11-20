@@ -15,12 +15,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup('sharkby7e.plugins')
 
+-- allow remapping of tmux vim navigator
+vim.g['tmux_navigator_no_mappings'] = 1
+
 -- lsp config
 require('sharkby7e.lsp')
 
 -- lazygit toggle-term
 local Terminal = require('toggleterm.terminal').Terminal
-local lazygit  = Terminal:new({ cmd = "lazygit", hidden = true })
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 function Lazygit_toggle()
   lazygit:toggle()
 end
