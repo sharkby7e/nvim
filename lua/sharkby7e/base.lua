@@ -26,4 +26,10 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
+-- random options
+
+-- highlight on yank
 vim.cmd([[au TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch", timeout=250, on_visual=true}]])
+
+-- needed to add this to make tests in duckweb work
+vim.g['test#javascript#mocha#options'] = '-r jsdom-global/register -r esm'
