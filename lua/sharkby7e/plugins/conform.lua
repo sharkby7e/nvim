@@ -21,7 +21,6 @@ return {
       html = { "htmlbeautifier" },
       javascript = { "prettierd" },
       lua = { "lua_ls" },
-      -- ruby = { "rubyfmt" },
       rust = { "rustfmt" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
