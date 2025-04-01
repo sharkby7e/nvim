@@ -21,13 +21,13 @@ map("n", "<C-h>", ":<C-U>TmuxNavigateRight<cr>", opts)
 map("n", "h", "j", opts)
 map("n", "j", "h", opts)
 
-map("n", "===", "gg=G", opts)
+map("n", "===", "gg=G<c-o>", opts)
 
 map("n", "n", "nzzzv", opts)
 map("n", "m", "Nzzzv", opts)
 
-map("n", "<leader>rs", "o<% %><ESC>bbea ", opts)
-map("n", "<leader>rt", "o<%= %><ESC>T=i ", opts)
+map("n", "<leader>rs", "i<% %><ESC>bbea ", opts)
+map("n", "<leader>rt", "i<%= %><ESC>T=i ", opts)
 
 map("n", "<S-h>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-l>", ":BufferLineCyclePrev<CR>", opts)

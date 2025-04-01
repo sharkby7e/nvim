@@ -11,7 +11,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     require 'nvim-treesitter.configs'.setup {
-      ensure_installed = { "vim", "vimdoc", "lua", "elixir", "heex", "eex", "ruby" },
+      ensure_installed = { "vim", "vimdoc", "lua", "elixir", "query", "heex", "eex", "ruby" },
       highlight = {
         enable = true,
       },
