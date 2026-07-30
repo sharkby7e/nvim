@@ -10,36 +10,29 @@ vim.diagnostic.config {
   underline = false,
 }
 
-local on_attach = function(_, bufnr)
-  local nmap = function(keys, func, desc)
-    if desc then
-      desc = "LSP: " .. desc
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    local bufnr = args.buf
+    local nmap = function(keys, func, desc)
+      if desc then
+        desc = "LSP: " .. desc
+      end
+      vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
     end
-    vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
-  end
-  nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-  nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
-  nmap('<leader>d', vim.diagnostic.open_float, 'Open float diagnostics')
-  nmap("K", vim.lsp.buf.hover)
+    nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+    nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+    nmap('<leader>d', vim.diagnostic.open_float, 'Open float diagnostics')
+    nmap("K", vim.lsp.buf.hover)
 
-  vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
-    vim.lsp.buf.format()
-  end, { desc = 'Format current buffer with LSP' })
-end
+    vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+      vim.lsp.buf.format()
+    end, { desc = 'Format current buffer with LSP' })
+  end,
+})
 
--- Ensure the servers above are installed
-require 'mason-lspconfig'.setup_handlers {
-  function(server_name)
-    require('lspconfig')[server_name].setup {
-      on_attach = on_attach,
-    }
-  end
-}
-
-local lspconfig = require("lspconfig")
-
-lspconfig.lua_ls.setup {
-  on_attach = on_attach,
+-- mason-lspconfig auto-installs (ensure_installed above) and calls
+-- vim.lsp.enable() for each; this just supplies lua_ls's settings.
+vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       diagnostics = {
@@ -47,4 +40,4 @@ lspconfig.lua_ls.setup {
       }
     }
   }
-}
+})
