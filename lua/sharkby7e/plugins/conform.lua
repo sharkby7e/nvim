@@ -26,7 +26,13 @@ return {
       typescriptreact = { "prettierd" },
     },
     -- Set up format-on-save
-    format_on_save = { timeout_ms = 500, lsp_fallback = true },
+    format_on_save = function(bufnr)
+      local ft = vim.bo[bufnr].filetype
+      if ft == "html" or ft == "eruby" then
+        return
+      end
+      return { timeout_ms = 500, lsp_fallback = true }
+    end,
     -- Customize formatters
     formatters = {
       shfmt = {
