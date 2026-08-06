@@ -41,3 +41,16 @@ vim.lsp.config('lua_ls', {
     }
   }
 })
+
+-- not installed via mason: mason's bin dir is first on $PATH, and its
+-- ruby-lsp binstub has a hardcoded shebang for whatever Ruby was
+-- global/default at mason-install time. `bundle exec ruby-lsp` finds
+-- that first via a plain PATH search (bundler only special-cases the
+-- literal `ruby` command), shadowing the project's own bundled gem and
+-- ignoring the Gemfile's pinned Ruby version. Instead, each project
+-- needs `gem "ruby-lsp", group: :development, require: false` in its
+-- Gemfile so `bundle exec ruby-lsp` resolves to the project's own copy.
+vim.lsp.config('ruby_lsp', {
+  cmd = { 'bundle', 'exec', 'ruby-lsp' }
+})
+vim.lsp.enable('ruby_lsp')
